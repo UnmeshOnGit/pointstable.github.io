@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#form-btn , #match-btn{
+    font-size: 15px;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 010px;
+    font: 500;
+    background-color: #0a1b3b;
+    color: white;
+    cursor: pointer;
+}
+
+.initial-form{
+    position: absolute;
+    left: -600px;
+    top: 205px;
+    background-color: #254580;
+    color: white;
+    max-width: fit-content;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 150px;
+    transition: 0.5s;
+}
+
+.initial-form-active{
+    position: absolute;
+    left: 20px;
+    top: 205px;
+}
+
+.initial-form input, .initial-form button{
+    font-size: 18px;
+}
+
+#team-buttons, #selected-teams {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#team-buttons button, #selected-teams button {
+    margin: 0 5px;
+}
+
+#points-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-image: linear-gradient(to right, #4e7ed8,#254580, #0a1b3b);
+    color: white;
+    font-size: 20px;
+}
+
+#points-table th, #points-table td {
+    border-top: 2px solid #ffffff;
+    padding: 10px;
+}
+
+.add-match-form{
+    position: absolute;
+    left: 1500px;
+    top: 150px;
+    color: white;
+    background-color: #0a1b3b;
+    width: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    border: 2px solid;
+}
+
+.add-match-form-active{
+    position: absolute;
+    left: 800px;
+}
+
+#team-buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    
+}
+.team-name{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(48, 48, 181);
+    border-radius: 5px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Tournament Points Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cricket Tournament Points Table</h1>
+    <button id="form-btn">Add Teams</button>
+    <button id="match-btn">Add Match</button>
+    <div class="initial-form">
+        <form id="team-form">
+            <label for="total-teams">Enter total number of teams: </label><br>
+            <input type="number" id="total-teams" name="total-teams" min="2" required>
+            <button type="button" onclick="generateTeamInputs()">Submit</button>
+        </form>
+        <div id="team-names"></div>
+    </div>
+
+    <table id="points-table">
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Played</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Points</th>
+                <th>NRR</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <div class="add-match-form">
+        <div id="team-buttons"></div>
+        <div id="match-details">
+            <h2>Match Details</h2>
+            <p align="center" >Select two teams to update match result</p>
+            <div id="selected-teams"></div>
+            <form id="match-form">
+                <label>
+                    <input type="radio" name="result" value="team1-win" required> Team 1 Won
+                </label>
+                <label>
+                    <input type="radio" name="result" value="team2-win" required> Team 2 Won
+                </label>
+                <label>
+                    <input type="radio" name="result" value="no-result" required> No Result
+                </label>
+                <button type="button" onclick="updateMatchResult()">Submit Result</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
